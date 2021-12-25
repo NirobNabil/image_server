@@ -106,7 +106,8 @@ app.post('/upload', (req, res) => {
             // result.files.push(`localhost:3001/${files[index].originalname}`);
         // }
         // result += '<hr/><a href="./">Upload more images</a>';
-        res.send({url: `localhost:3001/${req.file.originalname}`});
+        // res.send({url: `localhost:3001/${req.file.originalname}`});
+        res.send({url: `https://image-serverr.herokuapp.com/${req.file.originalname}`});
     });
 });
 
